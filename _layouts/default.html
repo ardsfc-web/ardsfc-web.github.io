@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,14 +19,16 @@
 
       <header>
         <h1>Ards FC</h1>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <p>A custom version of the Ards FC website</p>
       </header>
 
       <div id="banner">
         <span id="logo"></span>
-
-        <a href="/" class="button fork"><strong>Home</strong></a>
-        <a href="/fixtures.html" class="button fork"><strong>Fixtures</strong></a>
+        <span>Quicklinks:</span>
+        <ul>
+          <li><a href="/" class="button">Home</a></li>
+          <li><a href="/fixtures.html" class="button">Fixtures</a></li>
+        </ul>
       </div><!-- end banner -->
 
     <div class="wrapper">
@@ -38,9 +40,7 @@
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+        <p>Project maintained by <a href="https://www.github.com/shuggy999">shuggy999</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
       </footer>
     </div>
